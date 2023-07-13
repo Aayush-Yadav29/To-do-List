@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+.todoitem{
+    padding: 1%;
+    margin-top: 2%;
+    margin-left: 2%;
+    border: solid 2px rgb(114, 71, 114);;
+    border-radius: 10px;
+    width: 90%;
+    min-height: 20vh;
+    word-wrap: break-word;
+}
+.todoitem:hover{
+    border: 2px solid rgb(114, 71, 114);
+    box-shadow: rgb(96, 54, 96) 10px 10px 30px -10px;
+}
+
+.title{
+    font-family: 'Kanit', sans-serif;
+    font-size: 30px;
+    color: rgb(76, 14, 76);;
+}
+.deadline{
+    font-family: 'Roboto Mono', monospace;
+    margin-bottom: 2%;
+    margin-top: 1%;
+}
+.descriptionPrint{
+    font-family: 'Montserrat', sans-serif;
+}
+.btn{
+    width: 10%;
+    padding: 1.5%;
+    margin-top: 10px;
+    border-radius: 20px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(53, 2, 53);
+    color: white;
+}
+
+.btn:hover{
+    background-color:  rgb(114, 71, 114);;
+}

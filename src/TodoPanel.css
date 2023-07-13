@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Grandiflora+One&display=swap');
+.TodoPanel{
+        /* background-color: rgb(219, 144, 152); */
+        width: 55%;
+        margin-left: 5%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        position: relative; /* Set parent div as the positioning context */
+        overflow: hidden; /* Hide any overflowing content */
+}
+
+.no-todos{
+        /* background-color: aqua; */
+        text-align: center;
+        font-family: 'Grandiflora One', serif;
+        font-size: 40px;
+        font-weight: 800;
+        margin-top: 15%;
+        
+}
