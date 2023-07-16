@@ -8,7 +8,9 @@ This project is a simple "To-Do List" web application built using React. It allo
 
 - **Delete Task**: Users can delete tasks from the to-do list by clicking the delete icon next to each task.
 
+- **Change the order of list**: Users have the ability to enhance task prioritization with "Up" and "Down" buttons. By utilizing these buttons, users can easily rearrange tasks within the list, ensuring efficient prioritization. The addition of CSS transitions brings a seamless visual experience when swapping tasks, further enhancing the overall user experience.
 - **Task Persistence**: The to-do list is persisted using local storage, allowing users to access their tasks even after refreshing the page.
+
 
 ## How to Use
 
@@ -22,7 +24,12 @@ To use the To-Do List application, follow these steps:
    ```shell
    npm install
 
-4. Start the development server with the following command:
+4. Since I have also used some font awesome icons so you have install the required packages using following command:
+   ```shell
+   npm install @fortawesome/react-fontawesome @fortawesome/free-brands-svg-icons @fortawesome/free-solid-svg-icons
+
+
+5. Start the development server with the following command:
    ```shell
    npm start
 
