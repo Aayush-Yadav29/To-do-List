@@ -6,7 +6,8 @@ export const Addtodo = ({ addNewTodo }) => {
   const [Todo, setTodo] = useState({});
 
   function handleSubmit(e) {
-    e.preventDefault();
+    // e.preventDefault();
+    console.log('add task');
     // Check if any of the input fields are empty
     if (!Todo.title || !Todo.deadline || !Todo.description) {
       alert('Please fill in all fields');

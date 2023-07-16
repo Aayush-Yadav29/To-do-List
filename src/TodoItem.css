@@ -10,7 +10,17 @@
     width: 90%;
     min-height: 20vh;
     word-wrap: break-word;
+    /* for swapping */
+    transition: opacity 0.3s ease;
+    opacity: 1;
 }
+.todoitem.fade-out {
+    opacity: 0;
+  }
+  
+  .todoitem.fade-in {
+    opacity: 1;
+  }
 .todoitem:hover{
     border: 2px solid rgb(114, 71, 114);
     box-shadow: rgb(96, 54, 96) 10px 10px 30px -10px;
@@ -31,12 +41,14 @@
 }
 .btn{
     width: 10%;
+    margin-right: 2%;
     padding: 1.5%;
     margin-top: 10px;
     border-radius: 20px;
     font-family: 'Montserrat', sans-serif;
     background-color: rgb(53, 2, 53);
     color: white;
+    cursor: pointer;
 }
 
 .btn:hover{
