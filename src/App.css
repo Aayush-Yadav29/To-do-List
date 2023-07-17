@@ -1,4 +1,11 @@
 .body {
-    display: flex;
-    justify-content: space-between; /* Adjust this property to align the components according to your requirements */
-  }  
+  display: flex;
+  flex-direction: column; /* Change the flex direction to column for responsiveness */
+}
+
+@media (min-width: 768px) {
+  .body {
+      flex-direction: row; /* Switch back to row layout for larger screens */
+      justify-content: center; /* Adjust this property to align the components according to your requirements */
+  }
+}

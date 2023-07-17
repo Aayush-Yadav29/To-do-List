@@ -1,56 +1,97 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
-.todoitem{
-    padding: 1%;
-    margin-top: 2%;
-    margin-left: 2%;
-    border: solid 2px rgb(114, 71, 114);;
+
+.todoitem {
+    padding: 2%;
+    margin: 2% 2%;
+    border: solid 2px rgb(114, 71, 114);
     border-radius: 10px;
     width: 90%;
     min-height: 20vh;
     word-wrap: break-word;
+    box-sizing: border-box; /* Include padding and border within the width */
+    overflow: hidden; /* Hide any overflowing content */
     /* for swapping */
     transition: opacity 0.3s ease;
-    opacity: 1;
+    opacity: 1; 
 }
-.todoitem.fade-out {
+/* .dragging {
+    opacity: 0.8;
+  } */
+  .todoitem.fade-out {
     opacity: 0;
   }
   
   .todoitem.fade-in {
     opacity: 1;
   }
-.todoitem:hover{
+.todoitem:hover {
     border: 2px solid rgb(114, 71, 114);
     box-shadow: rgb(96, 54, 96) 10px 10px 30px -10px;
 }
 
-.title{
+.title {
     font-family: 'Kanit', sans-serif;
-    font-size: 30px;
-    color: rgb(76, 14, 76);;
+    font-size: 2vw; /* Use viewport units for font-size */
+    color: rgb(76, 14, 76);
 }
-.deadline{
+
+.deadline {
     font-family: 'Roboto Mono', monospace;
     margin-bottom: 2%;
     margin-top: 1%;
 }
-.descriptionPrint{
+
+.descriptionPrint {
     font-family: 'Montserrat', sans-serif;
 }
-.btn{
-    width: 10%;
-    margin-right: 2%;
-    padding: 1.5%;
+
+.btn {
+    width: 20%;
+    margin-right: 4%;
+    padding: 2%;
     margin-top: 10px;
     border-radius: 20px;
     font-family: 'Montserrat', sans-serif;
     background-color: rgb(53, 2, 53);
     color: white;
-    cursor: pointer;
 }
 
-.btn:hover{
-    background-color:  rgb(114, 71, 114);;
+.btn:hover {
+    background-color: rgb(114, 71, 114);
 }
+
+/* Media queries for responsiveness */
+
+@media (max-width: 768px) {
+    .todoitem {
+        width: 95%;
+        overflow-x: auto; /* Enable horizontal scrolling on small screens */
+    }
+    .title {
+        font-size: 5vw; /* Adjust font-size as per your preference */
+    }
+
+    .btn {
+        width: 40%;
+        padding: 2%;
+    }
+}
+
+@media (max-width: 480px) {
+    .todoitem {
+        width: 95%; /* Adjust width as per your preference */
+        overflow-x: auto; /* Enable horizontal scrolling if needed */
+    }
+
+    .title {
+        font-size: 5vw; /* Adjust font-size as per your preference */
+    }
+
+    .btn {
+        width: 80%; /* Adjust width as per your preference */
+        padding: 3%; /* Adjust padding as per your preference */
+    }
+}
+

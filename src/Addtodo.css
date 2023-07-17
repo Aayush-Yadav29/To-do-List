@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-.addtodo{
+
+.addtodo {
     position: sticky;
     top: 6%;
-    /* background-color: aqua; */
+    margin-left: 10%;
     margin-right: 4%;
     margin-top: 6%;
     margin-bottom: 6%;
@@ -13,10 +14,8 @@
     box-shadow: rgb(96, 54, 96) 20px 20px 30px -10px;
     border-radius: 27px;
     font-family: 'Montserrat', sans-serif;
-    /* background-color:  rgb(91, 18, 91); */
-    /* color: white; */
-
 }
+
 .form {
     display: flex;
     flex-direction: column;
@@ -27,25 +26,29 @@
     flex-direction: column;
     margin-bottom: 10px;
 }
-  
+
 label {
     font-weight: bold;
 }
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+
+::placeholder {
     font-family: 'Montserrat', sans-serif;
 }
 
-#title, #description, #deadline {
+#title,
+#description,
+#deadline {
     font-family: 'Montserrat', sans-serif;
-    /* Add any other desired font properties */
 }
 
-input,textarea {
+input,
+textarea {
     padding: 1.5%;
     margin-top: 10px;
     border-radius: 20px;
 }
-.Submitbtn{
+
+.Submitbtn {
     width: 25%;
     padding: 1.5%;
     margin-top: 10px;
@@ -56,6 +59,33 @@ input,textarea {
     cursor: pointer;
 }
 
-.Submitbtn:hover{
-    background-color:  rgb(114, 71, 114);;
+.Submitbtn:hover {
+    background-color: rgb(114, 71, 114);
+}
+
+/* Media queries for responsiveness */
+
+@media (max-width: 768px) {
+    .addtodo {
+        width: 50%;
+    }
+
+    .Submitbtn {
+        width: 30%;
+    }
+}
+
+@media (max-width: 480px) {
+    .addtodo {
+        width: 80%;
+    }
+
+    .Submitbtn {
+        width: 40%;
+    }
+
+    input,
+    textarea {
+        padding: 2%;
+    }
 }
